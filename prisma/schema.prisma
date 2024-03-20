@@ -9,3 +9,11 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Train{
+  id Int @id @default(autoincrement())
+  from_where String
+  to_where String
+  departure String
+  arrival String
+}
